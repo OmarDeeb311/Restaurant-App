@@ -364,6 +364,7 @@ footer .row .col:nth-child(2) h4 span {
 /*! End Gallery */
 /*! Start Contact */
 .contact {
+      min-height: calc(100vh - 208px);
   background-color: var(--color-one);
 }
 .contact :where(input, textarea) {
