@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --color-one: #fff6e0;
+  --color-two: #d8d9da;
+  --color-three: #61677a;
+  --color-four: #272829;
+  --ease-transition: all 0.2s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-four);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 !important;
+}
+a {
+  text-decoration: none !important;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif !important;
+}
+nav {
+  box-shadow: 0 0 5px 1px var(--color-four);
+  background-color: var(--color-one);
+}
+
+nav .logo {
+  width: 80px;
+}
+nav a {
+  color: var(--color-four);
+  background-color: var(--color-two);
+  transition: var(--ease-transition);
+}
+
+nav a:hover {
+  color: #eee;
+  background-color: var(--color-three);
+}
+
+.active {
+  color: #eee !important;
+  background-color: var(--color-four) !important;
+}
+
+nav .links {
+  height: 40px;
+}
+nav .toggle {
+  color: var(--color-four);
+  cursor: pointer;
+}
+
+.main-title {
+  width: fit-content;
+  transition: var(--ease-transition);
+  border-color: var(--color-four) !important;
+  color: var(--color-four);
+}
+
+.main-title:hover {
+  color: #eee;
+  border-color: #eee !important;
+  transition-delay: 0.5s;
+}
+
+.main-title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-four);
+  top: 50%;
+  transform: translateY(-50%);
+  left: -40px;
+  border-radius: 50%;
+  transition: var(--ease-transition);
+  z-index: -1;
+}
+.main-title::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-four);
+  top: 50%;
+  transform: translateY(-50%);
+  right: -40px;
+  border-radius: 50%;
+  transition: var(--ease-transition);
+  z-index: -1;
+}
+
+.main-title:hover h3 {
+  color: white;
+}
+
+.main-title:hover::before {
+  z-index: -1;
+  animation: left-move 0.5s linear forwards;
+}
+.main-title:hover::after {
+  z-index: -1;
+  animation: right-move 0.5s linear forwards;
+}
+
+@keyframes left-move {
+  50% {
+    left: 0;
+    width: 12px;
+    height: 12px;
+  }
+  100% {
+    left: 0;
+    border-radius: 0;
+    width: 51%;
+    height: 100%;
+  }
+}
+
+@keyframes right-move {
+  50% {
+    right: 0;
+    width: 12px;
+    height: 12px;
+  }
+  100% {
+    right: 0;
+    border-radius: 0;
+    width: 51%;
+    height: 100%;
+  }
+}
