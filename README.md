@@ -15,12 +15,11 @@ Dubai Sauce Restaurant is a web application designed to make it easy for users t
 
 To get started with the Dubai Sauce Restaurant React application, follow these steps:
 
-1. Download the application as a ZIP file.
-2. Extract the ZIP file to your desired location.
-3. Open your command line interface and navigate to the application's directory.
-4. Install the required dependencies by running the following command: npm install 
-5. Build the application using the following command: npm run build
-6. Start the application by running: npm start
+1. Clone the project on your device.
+2. Open your command line interface and navigate to the application's directory.
+3. Install the required dependencies by running the following command: npm install 
+4. Build the application using the following command: npm run build
+5. Start the application by running: npm start
 
 
 The application should now be up and running, and you can access it in your web browser.
