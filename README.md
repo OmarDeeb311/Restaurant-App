@@ -43,5 +43,4 @@ For a detailed view of the restaurant's menu, there is a separate page dedicated
 
 Dubai Sauce Restaurant has a dedicated contact page where users can send messages to the restaurant owner. Whether it's for suggestions, advice, or feedback, this feature allows for easy communication.
 
-Thank you for using the Dubai Sauce Restaurant React application. We hope you have a great experience exploring the restaurant's offerings and features. If you have any questions or encounter issues, feel free to reach out to us. Enjoy your virtual dining experience!
 
