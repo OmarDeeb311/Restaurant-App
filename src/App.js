@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "animate.css";
@@ -14,7 +14,7 @@ import Gallery from "./components/Gallery/Gallery";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Navbar />
       <Routes>
         <Route
@@ -33,7 +33,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<h1> Page Not Found 404 </h1>} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
