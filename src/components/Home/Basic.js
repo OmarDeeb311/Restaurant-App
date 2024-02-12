@@ -104,8 +104,8 @@ export default function Basic() {
       <div
         className={
           isShown
-            ? "bg-black h-100 pop-up position-absolute start-0 top-0 w-100 shown"
-            : "bg-black h-100 pop-up position-absolute start-0 top-0 w-100 "
+            ? "bg-black h-100 pop-up position-fixed start-0 top-0 w-100 shown z-3"
+            : "bg-black h-100 pop-up position-fixed start-0 top-0 w-100 "
         }>
         <div
           className={
